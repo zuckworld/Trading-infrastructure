@@ -27,6 +27,8 @@ This project is a TypeScript-based automated trading platform scaffold built aro
 3. Build TypeScript:
    `npm run build`
 
+For the complete setup path, see [`docs/GETTING_STARTED.md`](docs/GETTING_STARTED.md).
+
 ## Production deployment notes
 
 - The project is structured to be deployable to VPS/cloud/Docker environments.
