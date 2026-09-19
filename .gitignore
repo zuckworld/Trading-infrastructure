@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+tests/**/*.js
+tests/**/*.d.ts
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and runtime state
+*.log
+*.jsonl
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/

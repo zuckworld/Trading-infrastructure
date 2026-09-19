@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  trading-bot:
+    build: .
+    container_name: js-trading-bot
+    environment:
+      NODE_ENV: production
+      TRADING_ENV: demo
+      PAPER_TRADING: 'true'
+      DASHBOARD_PORT: 3000
+    env_file:
+      - .env
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
